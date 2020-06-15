@@ -15,3 +15,12 @@ public protocol SectionModelType {
 
     init(original: Self, items: [Item])
 }
+
+extension Array: SectionModelType {
+    public typealias Item = Element
+    public var items: [Item] { self }
+    
+    public init(original: Self, items: [Item]) {
+        self.init(items)
+    }
+}

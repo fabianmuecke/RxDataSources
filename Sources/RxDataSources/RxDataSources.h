@@ -6,7 +6,11 @@
 //  Copyright © 2016 kzaher. All rights reserved.
 //
 
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
 #import <UIKit/UIKit.h>
+#else
+#import <AppKit/AppKit.h>
+#endif
 
 //! Project version number for RxDataSources.
 FOUNDATION_EXPORT double RxDataSourcesVersionNumber;

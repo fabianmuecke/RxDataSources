@@ -51,6 +51,7 @@
 		C8BBFBE11F3B8F8D00A225F7 /* UI+SectionedViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BBFBD61F3B8F8D00A225F7 /* UI+SectionedViewType.swift */; };
 		C8E3905A1F36625B004FC993 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8984C5A1C36AF35001E4272 /* RxDataSources.framework */; };
 		C8E643E01FAE45710080BD2C /* RxCollectionViewSectionedDataSource+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E643DF1FAE45710080BD2C /* RxCollectionViewSectionedDataSource+Test.swift */; };
+		EF50AAF72497C70C002899E3 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50AAF62497C70C002899E3 /* TableViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +185,7 @@
 		C8BBFBD51F3B8F8D00A225F7 /* TableViewSectionedDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewSectionedDataSource.swift; sourceTree = "<group>"; };
 		C8BBFBD61F3B8F8D00A225F7 /* UI+SectionedViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UI+SectionedViewType.swift"; sourceTree = "<group>"; };
 		C8E643DF1FAE45710080BD2C /* RxCollectionViewSectionedDataSource+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxCollectionViewSectionedDataSource+Test.swift"; sourceTree = "<group>"; };
+		EF50AAF62497C70C002899E3 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +346,7 @@
 				C8BBFBD31F3B8F8D00A225F7 /* RxTableViewSectionedAnimatedDataSource.swift */,
 				C8BBFBD41F3B8F8D00A225F7 /* RxTableViewSectionedReloadDataSource.swift */,
 				C8BBFBD51F3B8F8D00A225F7 /* TableViewSectionedDataSource.swift */,
+				EF50AAF62497C70C002899E3 /* TableViewDataSource.swift */,
 				C8BBFBD61F3B8F8D00A225F7 /* UI+SectionedViewType.swift */,
 				C833338C1F8A5FAC00D46EAE /* Deprecated.swift */,
 				C84043C21F9D33CE0093C3E7 /* ViewTransition.swift */,
@@ -641,6 +644,7 @@
 			files = (
 				C81FBF641F3B9DC00094061E /* String+IdentifiableType.swift in Sources */,
 				C8BBFBDF1F3B8F8D00A225F7 /* RxTableViewSectionedReloadDataSource.swift in Sources */,
+				EF50AAF72497C70C002899E3 /* TableViewDataSource.swift in Sources */,
 				C81FBF5E1F3B9D660094061E /* Array+Extensions.swift in Sources */,
 				C8BBFBDE1F3B8F8D00A225F7 /* RxTableViewSectionedAnimatedDataSource.swift in Sources */,
 				C81FBF601F3B9D8B0094061E /* FloatingPointType+IdentifiableType.swift in Sources */,
@@ -721,7 +725,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.rxswiftcommunity.Differentiator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator macosx";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 			};
 			name = Debug;
@@ -744,7 +748,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.rxswiftcommunity.Differentiator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator macosx";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
@@ -932,7 +936,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kzaher.RxDataSources;
 				PRODUCT_NAME = RxDataSources;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator macosx";
 			};
 			name = Debug;
 		};
@@ -951,7 +955,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kzaher.RxDataSources;
 				PRODUCT_NAME = RxDataSources;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator macosx";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
